@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Number Game</title>
+</head>
+<body onload="init()">
+    <div id="container">
+        <div class="panel">
+            <h2>I have a random number<br> between 1 and 100</h2>
+            <h3>Dare to guess?</h3><hr>
+            <p>Select difficulty setting:</p>
+            <button id="easybtn" onclick="easyMode()" class="">Easy: Guess in 10 attempt(default)</button>
+            <button id="hardbtn" onclick="hardMode()" class="">Hard: Guess in 5 attempts</button>
+            <button id="newGameBtn" onclick="newgame()">NEW Game</button>
+        </div>
+
+        <div class="panel">
+            <h3 id="textOutput">Enter your guess below &amp; press enter</h3>
+            <input type="number" id="inputBox" onchange="compareGuess()" autocomplete="off" >
+            <p>Number of previous attempt: <span id="attempts"></span></p>
+        </div>
+
+        <div class="panel">
+            <p>Your previous guesses:</p>
+            <p id="guesslog"></p>
+        </div>
+    </div>   
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+:root {
+  --mainPink: #ef7998;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+}
+/
+
+/* store items */
+.store {
+  background: var(--mainGrey);
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.store-img {
+  transition: all 1s ease-in-out;
+}
+.img-container:hover .store-img {
+  transform: scale(1.2);
+}
+.store-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: var(--mainYellow);
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-in-out;
+  transform: translate(100%, 100%);
+}
+.img-container:hover .store-item-icon {
+  transform: translate(0, 0);
+}
+.store-item-icon:hover {
+  color: var(--mainWhite);
+}
+.store-item-value {
+  color: --mainYellow;
+}
+/*end of  store items */
+.search-box {
+  background: var(--mainPink);
+  color: var(--mainBlack);
+}
+
+/* ligthbox */
+
+body{
+    height: 5000px;
+}
+
+.lightbox-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    align-items: center;
+    place-items: center;
+    visibility: hidden;
+   
+}
+.show{
+    visibility: visible;
+
+}
+
+.lightbox-item{
+    width: 80vw;
+    height: 80vh;
+    background: url(./img/cupcake-2.jpeg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+.lightbox-holder{
+    position: relative;
+}
+.lightbox-close{
+    position: absolute;
+    top: -3.5rem;
+    right:1rem;
+    font-size: 2rem;
+    color: #ef7998;
+    padding: 5px 6px;
+}
+.btnLeft{
+    position: absolute;
+    top: 45%;
+    left: -2rem;
+    font-size: 4rem;
+    color: #ef7998;
+}
+.btnRight{
+    position: absolute;
+    top: 45%;
+    right: -2rem;
+    font-size: 4rem;
+    color: #ef7998;
+}
