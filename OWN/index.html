@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Shopping Prac</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar" id="home">
+    <div class="navbar-container flex">
+      <div class="navbar-center">
+        <img src="img/logo.svg" class="logo" alt="logo">
+        <div class="navbar-toggle" hidden>
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <ul class="list flex" >
+        <li>
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li>
+          <a href="#store" class="nav-link">Store</a>
+        </li>
+      </ul>
+      
+      <div class="a flex" >
+        <i class="fas fa-phone"></i>
+        <h4 class="num">+977-285-356</h4>
+     
+      <div class="shopping-cart flex">
+        <i class="fas fa-shopping-cart"></i>
+        <p class="items-cart" ><span class="items-count">0 </span> Items -$<span class="items-total">0</span></p>
+      </div>
+      </div>
+    </div>
+  </nav>  
+
+  <div class="banner">
+    <div class="content">
+    <h1 class="banner-heading">Welcome To <span class="pink">Grandma's</span></h1>
+    <button class="btn">EXPLORE</button>
+  </div>
+  </div>
+
+  <section class="about" id="about">
+    <div class="about-container flex">
+      <div class="about-content">
+        <h2 class="about-heading">About <span class="pink">Us</span></h2>
+        <p class="about-para">Lorem ipsum dolor sit, ameteius quasi soluta? Impedit consectetur adipisicing 
+          consectetur adipisicing elit. Fugit, magni! Veritatis
+           eius quasi soluta? Impedit consectetur adipisicing
+            elit. Fugit, magni! Veritatis?</p>
+             <button class="about-btn ">EXPLORE</button>
+      </div>
+      <div class="about-img-container">
+      <img src="img/sweets-1.jpeg"class="about-img" alt="">
+    </div>
+    </div>
+  </section>
+
+  <section class="store" id="store">
+    <div class="store-container">
+      <h2 class="heading">Our <span class="pink"> Store</span></h2>
+     <div class="btn-container">
+       <!--
+       <button type="button" data-id="all" class="store-btn">All</button>
+       <button type="button" data-id="cakes" class="store-btn">CAKES</button>
+       <button type="button" data-id="cupcakes" class="store-btn">CUPCAKES</button>
+       <button type="button" data-id="sweets" class="store-btn">SWEETS</button>
+       <button type="button" data-id="doughnuts" class="store-btn">DOUGHNUTS</button>-->
+     </div>
+     <div class="input">
+     <span class="search-items"><i class="fas fa-search"></i><input type="text" class="search" placeholder="item..."></span>
+    </div>
+    <div class="items-container">
+    <!--  <div class="item">
+        <div class="img-container">
+        <img src="img/cupcake-2.jpeg" class="item-img" alt="">
+        <div class="store-icon">
+          <i class="fas fa-shopping-cart"></i>
+          </div>
+        </div>
+        <div class="item-content flex">
+          <h2 class="name">Cupcake Item</h2>
+          <div class="price">$5</div>
+        </div>
+      </div>-->
+    
+    </div>
+  </div>
+  </section>
+
+  <div class="cart">
+   <!-- <div class="cart-container">
+       <img src="img/cupcake-3.jpeg" class="cart-img" alt="" >
+       <div class="card-content">
+         <h3 class="cart-heading">Cart Item</h3>
+         <div class="cart-price">$ 10.99</div>
+       </div>
+       <div class="cart-icon">
+        <i class="fas fa-trash"></i>
+       </div>
+    </div>-->
+ <!--   <div class="cart-container">
+     <img src="img/cupcake-3.jpeg" class="cart-img" alt="" >
+      <div class="card-content">
+        <h3 class="cart-heading">Cart Item</h3>
+        <div class="cart-price">$ 10.99</div>
+      </div>
+      <div class="cart-icon">
+       <i class="fas fa-trash"></i>
+      </div>
+   </div>-->
+    <div class="cart-amount">
+      <h2 class="total">Total<span class="amt"> $10.99</span></h2>
+    </div>
+    <button class="cart-btn">CLEAR CART</button>
+    <button class="cart-btn">CHECKOUT</button>
+  
+  </div>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.slideshow-container{
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    position: relative;
+}
+.div1, .div2,.div3{
+    height: 80vh;
+    width: 100%;
+    background-color: red;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.div1{
+    background: url(img/chris-charles-jQI1tnK6OEU-unsplash.jpg) no-repeat center;
+    background-size: cover;
+}
+.div2{
+    background: url(img/claudio-schwarz-purzlbaum-5AoIQCU-mOk-unsplash.jpg) no-repeat center;
+    background-size: cover;
+}
+.div3{
+    background: url(img/matteo-catanese-PI8Hk-3ZcCU-unsplash.jpg) no-repeat center;
+    background-size: cover;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    color: white;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.6s;
+
+}
+.prev{
+    left: 0;
+    border-radius: 5px;
+}
+.next{
+    right: 0;
+    border-radius: 5px;
+}
+.dots{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 20px;
+    transition:  background-color 0.4s ease-in;
+}
+.dots:hover,.active{
+    background-color: #717171;
+}
+
