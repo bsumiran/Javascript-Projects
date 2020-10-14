@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Kufam', cursive;
+    background-color: rgb(28, 15, 62);
+    
+}
+.container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    
+}
+#form{
+    width: 50rem;
+    
+    text-align: center;
+}
+#form input{
+    padding: 0.6rem 0.3rem ;
+    font-size: 1.5rem;
+    font-family: 'Kufam', cursive;
+    border-radius: 0.5rem;
+    color: lightgray;
+    background-color:#391463;
+    outline: none;
+    border: none;
+    margin-bottom: 3rem;
+}
+#form input::placeholder{
+    color: lightgray;
+    padding-left: 0.6rem;
+}
+
+.profile{
+    width: 50%;
+    padding:2rem;
+      background-color: #391463;
+      display: flex;
+      
+      
+}
+.profile img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0px 10px 8px rgb(28, 15, 62); 
+}
+.content{
+   
+    margin-left: 3rem;
+}
+.content h1{
+    color: lightgray;
+    margin-bottom: 1rem;
+}
+.content h3{
+    color: lightgray;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+}
+.data{
+    font-weight: 600;
+    display: flex ;
+    justify-content: space-evenly;
+    margin-bottom: 1.3rem;
+    color: lightgray;
+}
+h4{
+    font-size: 1.3rem;
+    color: lightgray;
+}
+
+.list{
+   
+    background-color: #2a2a72;
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    
+}
